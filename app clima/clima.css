@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #2a0845);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tarjeta{
+    width: 100%;
+    max-width: 420px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    border-radius: 20px;
+    padding: 35px 30px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+}
+
+
+.barra-de-busqueda{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.barra-de-busqueda input{
+    flex: 1;
+    height: 55px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.barra-de-busqueda button{
+    width: 55px;
+    height: 55px;
+    margin-left: 12px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.barra-de-busqueda button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.barra-de-busqueda img{
+    width: 22px;
+}
+
+
+.error{
+    display: none;
+    background-color: rgba(255,0,0,0.15);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.error p{
+    color: #ffbaba;
+    font-size: 14px;
+}
+
+
+.clima{
+    margin-top: 20px;
+    
+}
+
+.icono-del-clima{
+    width: 140px;
+    margin-bottom: 10px;
+
+}
+
+.temperatura{
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.ciudad{
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+
+.detalles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humedad,
+.viento{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.detalles p:last-child{
+    font-size: 13px;
+    opacity: 0.8;
+}
+
